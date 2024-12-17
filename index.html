@@ -4,28 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodenetX Innovation - Homepage</title>
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"> -->
+    
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
+<style>
+    #box1 {
+        /* margin: 10px; Adds space around each box */
+        padding: 20px; /* Adds space inside each box */
+        /* background: #f8f9fa;  */
+    }
+</style>
+
+
 <body>
     <!-- preloader -->
     <div class="preloader">
-        <div class="loaded">
-           <!-- <p>CODENETX</p> -->
-        </div>
+        <div class="loader"></div>
      </div>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">CodenetX Innovation</a>
+            
+                <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="" srcset=""></a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    
                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
@@ -37,41 +48,85 @@
     <!-- Hero Section -->
     <header class="hero bg-primary text-white text-center py-5">
         <div class="container">
-            <h1 class="hero-text1">Welcome to CodenetX Innovation</h1>
+            <h1 class="hero-text1">Welcome to <span class="netx-color">CodenetX</span> Innovation</h1>
    
-            <p>Your trusted partner in tech solutions.</p>
-            <div class="shape01"></div>
+            <p class="display-6">Your trusted partner in tech solutions.</p>
+            <div class="shapeee01"></div>
         
-            <a href="about.html" class="btn btn-light mt-3">Learn More About Us</a>
+            <div class="hero_btn">
+                <a href="about.html" class="btn_hero1  mt-3">Learn More About Us</a>
+            <a href="services.html" class="btn_hero2 mt-3">Our Services</a>
+            </div>
             
         </div>
      </div>
         </div>
     </header>
+    
+    <section class=" container my-3 my-sm-5">
+       <div class="display-inner">
+        <div class="display-inner-image">
+            <img src="assets/images/concept-teamwork-planning_42775-240.avif" class="image-fluid" alt="photo" srcset="">
+        </div>
+        <div class="display-inner-text col-12 col-md-6 ">
+            
+                <h4 class="display-4">Team Work</h4>
+                
+                <p class="display-6">Good Supoort at <span class="text-primary">Code</span>NetX</p>
+            
+        </div>
+       </div>
+       <br>
+   <hr> <br>
+        <div class="display-inner">
+         <div class="display-inner-text col-12 col-md-6 ">
+             
+                 <h4 class="display-5">We Bring Ideas To Life</h4>
+                 <p class="display-6">We at <span class="text-warning">codeNetX</span>, we Innovate. </p>
+             
+         </div>
 
+         <div class="display-inner-image2">
+            <img src="assets/images/rb_64279.png" class="image-fluid" alt="photo" srcset="">
+        </div>
+        </div>
+      </section>
     
 
     <!-- Services Section -->
     <section class="services py-5">
-        <div class="container">
-            <div class="row text-center">
+        <div class="container ">
+            <div class="row text-center ">
                 <div class="section-title">
                     <h1 class="mb-4">|Our Services</h1>
                 </div>
-                <div class="col-md-4 shadow-lg" id="box1">
-                    <h3 class="py-3">Software Development</h3>
+                <div class="col-md-4 shadow-lg mb-4 py-1" id="box1">
+                    <h5 class="py-3 "><i class="bi bi-code-square display-6"></i> Software Development</h5>
                     <p>We build scalable and efficient software tailored to your needs.</p>
                 </div>
-                <div class="col-md-4 shadow-lg"id="box1">
+                <div class="col-md-4 shadow-lg mb-4 py-1" id="box1">
                     <div class="shape01"></div>
-                    <h3 class="py-3">Cloud Solutions</h3>
+                    <h5 class="py-3"><i class="bi bi-cloud display-6"></i> Cloud Solutions</h5>
                     <p>Optimized cloud solutions to help you grow without limits.</p>
                 </div>
-                <div class="col-md-4 shadow-lg"id="box1">
-                    <h3 class="py-3">Cybersecurity</h3>
+                <div class="col-md-4 shadow-lg mb-4 py-1" id="box1">
+                    <h5 class="py-3"><i class="bi bi-shield-lock-fill display-6"></i></i> Cybersecurity</h5>
                     <p>Protecting your data and assets with robust security strategies.</p>
                 </div>
-            </div>
+                <div class="col-md-4 shadow-lg mb-4 py-1" id="box1">
+                    <h5 class="py-3"><i class="bi bi-reception-4 display-6"></i> Telecommunication Sales</h5>
+                    <p>Protecting your data and assets with robust security strategies.</p>
+                </div>
+                <div class="col-md-4 shadow-lg mb-4 py-1" id="box1">
+                    <h5 class="py-3"><i class="bi bi-bounding-box display-6"></i> Logistics</h5>
+                    <p>Protecting your data and assets with robust security strategies.</p>
+                </div>
+                <div class="col-md-4 shadow-lg mb-4 py-1" id="box1">
+                    <h5 class="py-3"><i class="bi bi-building display-6"></i> Real Estate</h5>
+                    <p>Protecting your data and assets with robust security strategies.</p>
+                </div>
+                
+            
         </div>
     </section>
 
@@ -79,7 +134,7 @@
         <div class="container">
             <h2 class="mb-4 text-center">Overview</h2>
             <br><br>
-            <div class="row ">
+            <div class="row over_view_section">
                 <!-- Pictures Section -->
                 <div class="col-lg-6 col-12 mb-4">
                     <div class="over_view_pictures">
@@ -99,64 +154,145 @@
                 <!-- Text Section -->
                 <div class="col-lg-6 col-12">
                     <div class="over_view_text">
-                        <h4>Lorem</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis alias voluptatum 
-                        aperiam hic delectus ab vitae molestiae facere! Beatae rem non nesciunt dignissimos 
-                        incidunt cupiditate quisquam ullam, a consequatur recusandae?</p>
+                        <h4>We Innovate</h4>
+                        <p class="text-secondary">The software development industry in Nigeria is expanding 
+                            incredibly with so many companies aiming to become the leading 
+                            names in the world. They are unique in many aspects, including 
+                            innovative approaches, high-quality production, and deep transformational effects.
+                             Each of these software development companies brings to the table its own special 
+                             features and ways to do it. Some are stronger in innovation and creativity, 
+                             while others focus on scalability and performance. 
+                            Now, let us explore the working of the best software development companies in Nigeria.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- OUR CAPABILITY  -->
-        <div class="our-capability-section">
 
-        </div>
-     <!-- OUR CAPABILITY ENDS HERE -->
+    <!-- OUR CAPABILITY  -->
+     <section>
+        <div class="container my-3 my-sm-5">
+            <div class="section-title">
+              <h2 class="text-center mb-sm-4">Our Capability</h2>
+            </div>
+            <div class="row mb-4 align-items-center our-capability-img flex-row-reverse">
+              <div class="col-12 col-md-6 mb-3 mb-md-0 our-capability-img">
+                <img src="/assets/images/capabilty1.png" class="img-fluid">
+              </div>
+              <div class="col-12 col-md-6 ">
+                <h3>Good UI/UX</h3>
+                <h6>Dynamic and user friendly designe</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac mollis lacus, 
+                    vel auctor risus. Etiam orci diam, tempor id nisl ac, aliquet cursus orci. Class 
+                    aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                     Curabitur sollicitudin semper aliquam. </p>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row mb-4 align-items-center">
+                <div class="col-12 col-md-6 mb-3 mb-md-0 our-capability-img">
+                  <img src="/assets/images/front end3.jpeg" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6">
+                  <h3>High-Tech Tools</h3>
+                  <h6>Dynamic and user friendly designe</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac mollis lacus, 
+                      vel auctor risus. Etiam orci diam, tempor id nisl ac, aliquet cursus orci. Class 
+                      aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                       Curabitur sollicitudin semper aliquam. </p>
+                  <!-- <a href="#0" class="btn_first">Read more</a> -->
+                </div>
+              </div>
+            <hr class="mb-4">
+
+            <div class="row mb-4 align-items-center flex-row-reverse">
+                <div class="col-12 col-md-6 mb-3 mb-md-0 our-capability-img">
+                  <img src="/assets/images/community1.jpeg" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6">
+                  <h3>Quality Assurance</h3>
+                  <h6>Dynamic and user friendly designe</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac mollis lacus, 
+                      vel auctor risus. Etiam orci diam, tempor id nisl ac, aliquet cursus orci. Class 
+                      aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                       Curabitur sollicitudin semper aliquam. </p>
+                    </div>
+                    <div class="capacity_btn">
+                        <a href="services.html" class="btn btn-primary text-white" id="">See more</a>
+                    </div>
+                </div>
+              </div>
+
+           
+    
+            
+    
+            
+
+        
+     </section>
+
+      
 <!-- OUR TECHNOLOGY  -->
+   
+    </section>
 
     <section class="our-tech-section">
         <div class="section-title">
             <h1>Our Technologies</h1>
         </div>
         <div class="our-tech-carousel">
-            <!-- Original set of items -->
             <div class="our-tech-image">
-                <!-- <h5>Microsoft Azure</h5> -->
                 <img src="assets/images/our tech pic/azure.png" alt="Microsoft Azure">
             </div>
             <div class="our-tech-image">
-                <!-- <h5>AWS</h5> -->
                 <img src="assets/images/our tech pic/aws1.png" alt="AWS">
             </div>
             <div class="our-tech-image">
-                <!-- <h5>PHP</h5> -->
                 <img src="assets/images/our tech pic/php.png" alt="PHP">
             </div>
             <div class="our-tech-image">
-                <!-- <h5>NodeJs</h5> -->
                 <img src="assets/images/our tech pic/nodejs.png" alt="NodeJs">
             </div>
             <div class="our-tech-image">
-                <!-- <h5>MariaDB</h5> -->
                 <img src="assets/images/our tech pic/mariadb.png" alt="MariaDB">
             </div>
             <div class="our-tech-image">
-                <!-- <h5>MongoDB</h5> -->
                 <img src="assets/images/our tech pic/mongo.jpeg" alt="MongoDB">
             </div>
             <div class="our-tech-image">
-                <!-- <h5>Oracle</h5> -->
                 <img src="assets/images/our tech pic/oracle.png" alt="Oracle">
             </div>
-            <div class="our-tech-image">
-                <!-- <h5>Cisco</h5> -->
+        </div>
+    </section>
+    
+    <section class="our-tech-section">
+        
+        <div class="our-tech-carousel2">
+            <div class="our-tech-image2">
                 <img src="assets/images/our tech pic/cisco.png" alt="Cisco">
             </div>
-    
-            <!-- Duplicated set of items for continuous effect -->
-          
+            <div class="our-tech-image2">
+                <img src="assets/images/our tech pic/reactjs.png" alt="ReactJs">
+            </div>
+            <div class="our-tech-image2">
+                <img src="assets/images/our tech pic/angular.png" alt="Angular">
+            </div>
+            <div class="our-tech-image2">
+                <img src="assets/images/our tech pic/front end.jpeg" alt="Frontend">
+            </div>
+            <div class="our-tech-image2">
+                <img src="assets/images/our tech pic/jq1.png" alt="jQuery">
+            </div>
+            <div class="our-tech-image2">
+                <img src="assets/images/our tech pic/vuejs.png" alt="VueJS">
+            </div>
+            <div class="our-tech-image2">
+                <img src="assets/images/our tech pic/azure.png" alt="Microsoft Azure">
+            </div>
+        </div>
     </section>
+    
     
     
      <!-- OUR TECHNOLOGY ENDS HERE -->
@@ -172,17 +308,16 @@
         </div>
      </div>
     </div>
-<div class="blank bg-secondary py-1">
-    
-</div>
+
     <!-- Footer -->
     <footer class="bg-dark text-white  py-3">
         <div class="footer_content ">
             <div class="social mx-md-3">
                 <h6 class="text-center">Social</h6>
-                <a href="#">  <p>Facebook <i class="bi bi-facebook"></i></p></a>
-                <a href="#">  <p>Instagram <i class="bi bi-instagram"></i></p></a>
-                <a href="#"><p>Twitter <i class="bi bi-x "></i></p></a>
+                <a href="#">  <p>Facebook <i class="bi bi-facebook text-warning"></i></p></a>
+                <a href="#">  <p>Instagram <i class="bi bi-instagram text-warning"></i></p></a>
+                <a href="#">  <p>X(twiter) <i class="bi bi-twitter-x text-warning"></i></p></a>
+                
             </div>
             
             <div class="quick_link">
@@ -202,12 +337,25 @@
                <p><i class="bi bi-globe"><a href="#">www.condnetxinnovation.com</a></i></p>
             </div>
         </div>
-        <br>
-        <p class="text-center bg-white text-dark">&copy; 2024 CodenetX Innovation. All Rights Reserved.</p>
+        
+        <p class="text-center text-white">&copy; 2024 CodenetX Innovation. All Rights Reserved.</p>
     </footer>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+    <!-- SCRIPT LINKS  -->
+    <script src="/assets/jquery/jquery.js"></script>
+    <script src="assets/javascript/ajax.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
+
+    <script>
+        window.addEventListener("load", function() {
+            document.querySelector(".preloader").style.opacity = "0";
+            setTimeout(function() {
+                document.querySelector(".preloader").style.display = "none";
+            }, 300); // Wait for transition to complete
+        });
+    </script>
+    
+
 </body>
+
 </html>

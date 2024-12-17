@@ -3,34 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <style type="text/css">
         body {
-          font-family: 'Raleway', sans-serif;
+            font-family: 'Raleway', sans-serif;
         }
         h1, h2, h3, h4, h5, h6 {
-          font-family: 'Poiret One', cursive;
+            font-family: 'Poiret One', cursive;
         }
-      </style>
+    </style>
     <title>Contact Us - CodenetX Innovation</title>
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"> -->
-
 </head>
 <body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
 
-    <!-- Navbar (Same as on index.html) -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">CodenetX Innovation</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="CodenetX Logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
@@ -40,68 +41,114 @@
     </nav>
 
     <!-- Contact Us Form -->
-    <section class="contact-us py-5">
+    <section class="contact-us py-5 my-5">
         <div class="container text-center">
             <div class="section-title">
                 <h1>|Contact Us</h1>
             </div>
-            <p>Have questions or need more information? Contact our team today.</p>
-            <form class="mx-auto col-md-6">
-                <div class="mb-3">
-                    <label for="name" class="form-label"><i class="bi bi-person"></i>Name</label>
-                    <input type="text" class="form-control" id="name" required>
+            <p class="text-primary">Have questions or need more information? Contact our team today.</p>
+
+            <ul class="nav nav-tabs nav-justified" id="nav" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link h4 mb-0 active" id="step-1-tab" data-bs-toggle="tab" href="#step-1" role="tab" aria-controls="step-1" aria-selected="true">
+                        Individuals<br><small class="d-none d-md-inline">Contact us</small>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h4 mb-0" id="step-2-tab" data-bs-toggle="tab" href="#step-2" role="tab" aria-controls="step-2" aria-selected="false">
+                        Organisations<br><small class="d-none d-md-inline">Contact us</small>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content pt-4" id="navContent">
+                <!-- Individuals Tab -->
+                <div class="tab-pane fade show active" id="step-1" role="tabpanel" aria-labelledby="step-1-tab">
+                    <form class="mx-auto col-md-6">
+                        <div class="mb-3">
+                            <label for="individual-name" class="form-label"><i class="bi bi-person"></i> Name</label>
+                            <input type="text" class="form-control" id="individual-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="individual-email" class="form-label"><i class="bi bi-envelope"></i> Email</label>
+                            <input type="email" class="form-control" id="individual-email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="individual-phone" class="form-label"><i class="bi bi-telephone"></i> Phone</label>
+                            <input type="text" class="form-control" id="individual-phone" placeholder="+234 123456789" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="individual-message" class="form-label"><i class="bi bi-pen"></i> Message</label>
+                            <textarea class="form-control" id="individual-message" rows="4" required placeholder="Write your message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"><i class="bi bi-send"></i> Submit</button>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label"> <i class="bi bi-envelope"> </i>Email</label>
-                    <input type="email" class="form-control" id="email" required>
+
+                <!-- Organisations Tab -->
+                <div class="tab-pane fade" id="step-2" role="tabpanel" aria-labelledby="step-2-tab">
+                    <form class="mx-auto col-md-6">
+                        <div class="mb-3">
+                            <label for="organisation-name" class="form-label"><i class="bi bi-person"></i> Organisations/Company Name</label>
+                            <input type="text" class="form-control" id="organisation-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="organisation-email" class="form-label"><i class="bi bi-envelope"></i> Email</label>
+                            <input type="email" class="form-control" id="organisation-email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="organisation-phone" class="form-label"><i class="bi bi-telephone"></i> Phone</label>
+                            <input type="text" class="form-control" id="organisation-phone" placeholder="+234 123456789" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="organisation-message" class="form-label"><i class="bi bi-pen"></i> Message</label>
+                            <textarea class="form-control" id="organisation-message" rows="4" required placeholder="Write your message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"><i class="bi bi-send"></i> Submit</button>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label"><i class="bi bi-pen"></i>Message</label>
-                    <textarea class="form-control" id="message" rows="4" required placeholder="Write your message..."></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            </div>
         </div>
     </section>
 
-    <br> 
-
-                    
-                 
     <!-- Footer -->
-    <footer class="bg-dark text-white  py-3">
-        <div class="footer_content ">
+    <footer class="bg-dark text-white py-3">
+        <div class="footer_content">
             <div class="social mx-md-3">
                 <h6 class="text-center">Social</h6>
-                <a href="#">  <p>Facebook <i class="bi bi-facebook"></i></p></a>
-                <a href="#">  <p>Instagram <i class="bi bi-instagram"></i></p></a>
-                <a href="#"><p>Twitter <i class="bi bi-x "></i></p></a>
+                <a href="#">  <p>Facebook <i class="bi bi-facebook text-warning"></i></p></a>
+                <a href="#">  <p>Instagram <i class="bi bi-instagram text-warning"></i></p></a>
+                <a href="#">  <p>X(twiter) <i class="bi bi-twitter-x text-warning"></i></p></a>
             </div>
-
             <div class="quick_link">
-                <!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
-                    <h6 class="text-center">Quick Links</h6>
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                    </ul>
-                <!-- </div> -->
+                <h6 class="text-center">Quick Links</h6>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
             </div>
             <div class="contact">
                 <h6 class="text-center">Contact</h6>
-               <p><i class="bi bi-envelope"></i><a href="mailto:Email" value="">condenetx@support.com</a></p>
-               <p><i class="bi bi-telephone"></i><a href="tel:+23480000000">+23480000000</a></p>
-               <p><i class="bi bi-globe"><a href="#">www.condnetxinnovation.com</a></i></p>
+                <p><i class="bi bi-envelope"></i> <a href="mailto:condenetx@support.com">condenetx@support.com</a></p>
+                <p><i class="bi bi-telephone"></i> <a href="tel:+23480000000">+23480000000</a></p>
+                <p><i class="bi bi-globe"></i> <a href="#">www.condnetxinnovation.com</a></p>
             </div>
         </div>
-        <br>
         <hr>
         <p class="text-center">&copy; 2024 CodenetX Innovation. All Rights Reserved.</p>
     </footer>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+    <script src="assets/jquery/jquery.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/javascript/scripts.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+            const preloader = document.querySelector(".preloader");
+            preloader.style.opacity = "0";
+            setTimeout(() => {
+                preloader.style.display = "none";
+            }, 300);
+        });
+    </script>
 </body>
 </html>
